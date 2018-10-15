@@ -1,10 +1,3 @@
-/*
-	Author: Group 007
-		Dung (Kevin) Nguyen - tnguyen4
-		Minh Pham - mnpham
-*/
-
-
 /* Question 1 */
 create view ClassTypeStats as 
 select ClassType, COUNT(dateSubmitted) as Submitted, COUNT(dateRejected) as Rejected, COUNT(dateApproved) as Approved
