@@ -1,0 +1,20 @@
+Relational Schema:
+Account(loginName, password)
+
+GovernmentAgent(emailAddr, phone, name, loginName)
+
+SuperAgent(emailAddr, ttdID)
+
+WineCompRep(repID, phone, name, loginName, companyName, emailAddr)
+
+Wine(wineID, appellation, bottleName, alcoholPercentage, class, brandName, netContent)
+
+WineLabelForm(formID, status, dateRejected, dateSubmitted, vintage, dateApproved, wineID)
+
+Process(Date, Comment, currentReviewerID, formID)
+
+Foreign key (WineLableForm.wineID) references (Wine.wineID)
+Foreign Key (GovernmentAgent.loginName) references (Account.loginName)
+Foreign Key (WineCompRep.loginName) references (Account.loginName)
+Foreign Key (Process.currentReviewerID) references (SuperAgent.ttbID)
+Foreign Key (Process.formID) references (WineLabelForm.formID)
