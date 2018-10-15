@@ -1,9 +1,3 @@
-/**
- * @author Dung (Kevin) Nguyen - tnguyen4
- *          Minh Ngoc Pham - mnpham
- * Group 07
- */
-
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.sql.*;
